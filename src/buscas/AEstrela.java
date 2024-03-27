@@ -15,7 +15,7 @@ public class AEstrela {
         achou = false;
     }
     public void buscar(Estacao atual) {
-        System.out.println("\n * Atual: " + atual.getNome() + "metros");
+        System.out.println("\n * Atual: " + atual.getNome());
         atual.setVisitado(true);
 
         if (atual == objetivo) {

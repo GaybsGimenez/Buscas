@@ -36,50 +36,63 @@ public class Mapa {
 
         // Definir as arestas de estacoes adjacentes a e1
         e1.addEstacaoAdjacente(new Adjacente(e2, 4));
+
         // Definir as arestas de estacoes adjacentes a e2
         e2.addEstacaoAdjacente(new Adjacente(e1, 4));
         e2.addEstacaoAdjacente(new Adjacente(e3, 5));
         e2.addEstacaoAdjacente(new Adjacente(e7, 10));
         e2.addEstacaoAdjacente(new Adjacente(e9, 7));
+
         // Definir as arestas de estacoes adjacentes a e3
         e3.addEstacaoAdjacente(new Adjacente(e2, 5));
         e3.addEstacaoAdjacente(new Adjacente(e4, 6));
         e3.addEstacaoAdjacente(new Adjacente(e7, 7));
         e3.addEstacaoAdjacente(new Adjacente(e8, 4));
+
         // Definir as arestas de estacoes adjacentes a e4
         e4.addEstacaoAdjacente(new Adjacente(e3, 6));
         e4.addEstacaoAdjacente(new Adjacente(e5, 12));
         e4.addEstacaoAdjacente(new Adjacente(e8, 9));
         e4.addEstacaoAdjacente(new Adjacente(e14, 28));
+
         // Definir as arestas de estacoes adjacentes a e5
         e5.addEstacaoAdjacente(new Adjacente(e4, 12));
+
         // Definir as arestas de estacoes adjacentes a e6
         e6.addEstacaoAdjacente(new Adjacente(e7, 2));
+
         // Definir as arestas de estacoes adjacentes a e7
         e7.addEstacaoAdjacente(new Adjacente(e2, 10));
         e7.addEstacaoAdjacente(new Adjacente(e3, 7));
         e7.addEstacaoAdjacente(new Adjacente(e6, 2));
+
         // Definir as arestas de estacoes adjacentes a e8
         e8.addEstacaoAdjacente(new Adjacente(e3, 4));
         e8.addEstacaoAdjacente(new Adjacente(e4, 9));
         e8.addEstacaoAdjacente(new Adjacente(e9, 6));
         e8.addEstacaoAdjacente(new Adjacente(e10, 3));
+
         // Definir as arestas de estacoes adjacentes a e9
         e9.addEstacaoAdjacente(new Adjacente(e2, 7));
         e9.addEstacaoAdjacente(new Adjacente(e8, 6));
         e9.addEstacaoAdjacente(new Adjacente(e10, 3));
         e9.addEstacaoAdjacente(new Adjacente(e11, 4));
+
         // Definir as arestas de estacoes adjacentes a e10
         e10.addEstacaoAdjacente(new Adjacente(e8, 3));
         e10.addEstacaoAdjacente(new Adjacente(e9, 3));
         e10.addEstacaoAdjacente(new Adjacente(e12, 5));
         e10.addEstacaoAdjacente(new Adjacente(e13, 4));
+
         // Definir as arestas de estacoes adjacentes a e11
         e11.addEstacaoAdjacente(new Adjacente(e9, 4));
+
         // Definir as arestas de estacoes adjacentes a e12
         e12.addEstacaoAdjacente(new Adjacente(e10, 5));
+
         // Definir as arestas de estacoes adjacentes a e13
         e13.addEstacaoAdjacente(new Adjacente(e10, 4));
+
         // Definir as arestas de estacoes adjacentes a e14
         e14.addEstacaoAdjacente(new Adjacente(e4, 28));
     }
