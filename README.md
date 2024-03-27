@@ -1,17 +1,26 @@
-# Repositório de Estudo Pessoal - Introdução a Agentes Inteligentes
+# Problema do Metrô de Londres - Busca Heurística com A*
 
-Este é um repositório de estudo pessoal da disciplina de Introdução a Agentes Inteligentes da UFPE (Universidade Federal de Pernambuco).
+Este repositório contém a implementação da segunda atividade da disciplina de Introdução a Agentes Inteligentes (IAI) do ano de 2024 da UFPE. A atividade consiste na aplicação do algoritmo A* para resolver o problema da busca de rotas no metrô de Londres.
 
-## Projeto: Sistema de Busca Inteligente de Cidades
+## Descrição do Problema
 
-Este projeto tem como objetivo a construção de um sistema de busca inteligente de cidades em Java.
+O problema consiste em calcular a melhor rota em um mapa "reduzido" do metrô de Londres, onde cada estação é um estado. O objetivo é encontrar a rota mais eficiente para ir de uma estação inicial para uma estação final.
 
-### Parte 1: Busca Sem Informação
+### Estado Inicial
+- Estação de partida selecionada pelo usuário.
 
-Na primeira parte do projeto, serão implementados algoritmos de busca sem informação, utilizando estruturas de dados como pilha, fila, busca em profundidade e busca em largura. Esses algoritmos serão aplicados para resolver problemas de busca em um espaço de estados, como encontrar um caminho em um grafo de cidades.
+### Estado Final (Objetivo)
+- Estação de destino desejada.
 
-### Parte 2: Busca com Informação
+### Ações e Custos
+- As ações correspondem à movimentação entre as estações do metrô.
+- O custo de cada ação pode variar dependendo da distância entre as estações ou outros critérios definidos.
+  
+### Função de Avaliação (Heurística)
+- Para este problema, foi escolhida a heurística de distância euclidiana entre as estações. Essa heurística estima o custo restante para atingir o objetivo a partir de cada estado.
 
-Na segunda parte do projeto, serão implementados algoritmos de busca com informação, incluindo heurísticas, ordenação de vetor, busca gulosa e o algoritmo A*. Esses algoritmos serão utilizados para realizar buscas mais eficientes e informadas no espaço de estados.
+# Ainda precisa ser implementado:
 
+
+**Observação:** Este é um projeto desenvolvido como parte da segunda atividade da disciplina de Introdução a Agentes Inteligentes (IAI) de 2024 da UFPE. Responsáveis pela implementação: Gabriela Gimenez e Silvio Sá.
 
