@@ -20,17 +20,17 @@ public class Mapa {
     public Mapa() {
         e1 = new Estacao("E1", 17);
         e2 = new Estacao("E2", 13);
-        e3 = new Estacao("E3", 23);
-        e4 = new Estacao("E4", 28);
-        e5 = new Estacao("E5", 26);
-        e6 = new Estacao("E6", 32);
-        e7 = new Estacao("E7", 30);
-        e8 = new Estacao("E8", 19);
-        e9 = new Estacao("E9", 22);
-        e10 = new Estacao("E10", 21);
-        e11 = new Estacao("E11", 26);
+        e3 = new Estacao("E3", 10);
+        e4 = new Estacao("E4", 6);
+        e5 = new Estacao("E5", 7);
+        e6 = new Estacao("E6", 21);
+        e7 = new Estacao("E7", 17);
+        e8 = new Estacao("E8", 6);
+        e9 = new Estacao("E9", 10);
+        e10 = new Estacao("E10", 8);
+        e11 = new Estacao("E11", 13);
         e12 = new Estacao("E12", 12);
-        e13 = new Estacao("E13", 19);
+        e13 = new Estacao("E13", 6);
         e14 = new Estacao("E14", 0);
 
 
@@ -40,61 +40,61 @@ public class Mapa {
         // Definir as arestas de estacoes adjacentes a e2
         e2.addEstacaoAdjacente(new Adjacente(e1, 4));
         e2.addEstacaoAdjacente(new Adjacente(e3, 5));
-        e2.addEstacaoAdjacente(new Adjacente(e7, 10));
-        e2.addEstacaoAdjacente(new Adjacente(e9, 7));
+        e2.addEstacaoAdjacente(new Adjacente(e7, 14));
+        e2.addEstacaoAdjacente(new Adjacente(e9, 4));
 
         // Definir as arestas de estacoes adjacentes a e3
         e3.addEstacaoAdjacente(new Adjacente(e2, 5));
         e3.addEstacaoAdjacente(new Adjacente(e4, 6));
-        e3.addEstacaoAdjacente(new Adjacente(e7, 7));
+        e3.addEstacaoAdjacente(new Adjacente(e7, 8));
         e3.addEstacaoAdjacente(new Adjacente(e8, 4));
 
         // Definir as arestas de estacoes adjacentes a e4
         e4.addEstacaoAdjacente(new Adjacente(e3, 6));
-        e4.addEstacaoAdjacente(new Adjacente(e5, 12));
-        e4.addEstacaoAdjacente(new Adjacente(e8, 9));
-        e4.addEstacaoAdjacente(new Adjacente(e14, 28));
+        e4.addEstacaoAdjacente(new Adjacente(e5, 3));
+        e4.addEstacaoAdjacente(new Adjacente(e8, 4));
+        e4.addEstacaoAdjacente(new Adjacente(e14, 6));
 
         // Definir as arestas de estacoes adjacentes a e5
-        e5.addEstacaoAdjacente(new Adjacente(e4, 12));
+        e5.addEstacaoAdjacente(new Adjacente(e4, 3));
 
         // Definir as arestas de estacoes adjacentes a e6
-        e6.addEstacaoAdjacente(new Adjacente(e7, 2));
+        e6.addEstacaoAdjacente(new Adjacente(e7, 3));
 
         // Definir as arestas de estacoes adjacentes a e7
-        e7.addEstacaoAdjacente(new Adjacente(e2, 10));
-        e7.addEstacaoAdjacente(new Adjacente(e3, 7));
-        e7.addEstacaoAdjacente(new Adjacente(e6, 2));
+        e7.addEstacaoAdjacente(new Adjacente(e2, 14));
+        e7.addEstacaoAdjacente(new Adjacente(e3, 8));
+        e7.addEstacaoAdjacente(new Adjacente(e6, 3));
 
         // Definir as arestas de estacoes adjacentes a e8
         e8.addEstacaoAdjacente(new Adjacente(e3, 4));
-        e8.addEstacaoAdjacente(new Adjacente(e4, 9));
-        e8.addEstacaoAdjacente(new Adjacente(e9, 6));
-        e8.addEstacaoAdjacente(new Adjacente(e10, 3));
+        e8.addEstacaoAdjacente(new Adjacente(e4, 6));
+        e8.addEstacaoAdjacente(new Adjacente(e9, 5));
+        e8.addEstacaoAdjacente(new Adjacente(e10, 6));
 
         // Definir as arestas de estacoes adjacentes a e9
-        e9.addEstacaoAdjacente(new Adjacente(e2, 7));
-        e9.addEstacaoAdjacente(new Adjacente(e8, 6));
+        e9.addEstacaoAdjacente(new Adjacente(e2, 4));
+        e9.addEstacaoAdjacente(new Adjacente(e8, 5));
         e9.addEstacaoAdjacente(new Adjacente(e10, 3));
-        e9.addEstacaoAdjacente(new Adjacente(e11, 4));
+        e9.addEstacaoAdjacente(new Adjacente(e11, 3));
 
         // Definir as arestas de estacoes adjacentes a e10
-        e10.addEstacaoAdjacente(new Adjacente(e8, 3));
+        e10.addEstacaoAdjacente(new Adjacente(e8, 6));
         e10.addEstacaoAdjacente(new Adjacente(e9, 3));
-        e10.addEstacaoAdjacente(new Adjacente(e12, 5));
-        e10.addEstacaoAdjacente(new Adjacente(e13, 4));
+        e10.addEstacaoAdjacente(new Adjacente(e12, 6));
+        e10.addEstacaoAdjacente(new Adjacente(e13, 9));
 
         // Definir as arestas de estacoes adjacentes a e11
-        e11.addEstacaoAdjacente(new Adjacente(e9, 4));
+        e11.addEstacaoAdjacente(new Adjacente(e9, 3));
 
         // Definir as arestas de estacoes adjacentes a e12
-        e12.addEstacaoAdjacente(new Adjacente(e10, 5));
+        e12.addEstacaoAdjacente(new Adjacente(e10, 6));
 
         // Definir as arestas de estacoes adjacentes a e13
-        e13.addEstacaoAdjacente(new Adjacente(e10, 4));
+        e13.addEstacaoAdjacente(new Adjacente(e10, 9));
 
         // Definir as arestas de estacoes adjacentes a e14
-        e14.addEstacaoAdjacente(new Adjacente(e4, 28));
+        e14.addEstacaoAdjacente(new Adjacente(e4, 6));
     }
 
     public Estacao getE1() {

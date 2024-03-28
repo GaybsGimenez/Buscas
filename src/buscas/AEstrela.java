@@ -42,8 +42,9 @@ public class AEstrela {
 
     public static void main(String args[]){
         Mapa mapa = new Mapa();
-        AEstrela a = new AEstrela(mapa.getE1()); // estado objetivo
-        a.buscar(mapa.getE14()); // estado inicial
+        AEstrela a = new AEstrela(mapa.getE14()); // Estação final: E14
+        a.buscar(mapa.getE1()); // Estação inicial: E1
     }
+
 
 }
