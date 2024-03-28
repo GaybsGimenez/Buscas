@@ -2,6 +2,12 @@
 
 Este repositório contém a implementação da segunda atividade da disciplina de Introdução a Agentes Inteligentes (IAI) do ano de 2024 da UFPE. A atividade consiste na aplicação do algoritmo A* para resolver o problema da busca de rotas no metrô de Londres.
 
+## Mapa Reduzido
+![img.png](img.png)
+
+## Grafo das Estações com a distância real, em Km, entre cada nó
+![img_2.png](img_2.png)
+
 ## Descrição do Problema
 
 O problema consiste em calcular a melhor rota em um mapa "reduzido" do metrô de Londres, onde cada estação é um estado. O objetivo é encontrar a rota mais eficiente para ir de uma estação inicial para uma estação final.
