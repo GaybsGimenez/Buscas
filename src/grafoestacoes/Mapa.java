@@ -1,212 +1,212 @@
 package grafoestacoes;
 
 public class Mapa {
-    private Estacao e1;
-    private Estacao e2;
-    private Estacao e3;
-    private Estacao e4;
-    private Estacao e5;
-    private Estacao e6;
-    private Estacao e7;
-    private Estacao e8;
-    private Estacao e9;
-    private Estacao e10;
-    private Estacao e11;
-    private Estacao e12;
-    private Estacao e13;
-    private Estacao e14;
+    private Estacao e1red;
+    private Estacao e2redGreen;
+    private Estacao e3redBlue;
+    private Estacao e4redYellow;
+    private Estacao e5yellow;
+    private Estacao e6blue;
+    private Estacao e7blueGreen;
+    private Estacao e8blueYellow;
+    private Estacao e9yellowGreen;
+    private Estacao e10greenBlue;
+    private Estacao e11yellow;
+    private Estacao e12blue;
+    private Estacao e13green;
+    private Estacao e14red;
 
     // Criar instâncias de todas as estações
     public Mapa() {
-        e1 = new Estacao("E1", 17);
-        e2 = new Estacao("E2", 13);
-        e3 = new Estacao("E3", 10);
-        e4 = new Estacao("E4", 6);
-        e5 = new Estacao("E5", 7);
-        e6 = new Estacao("E6", 21);
-        e7 = new Estacao("E7", 17);
-        e8 = new Estacao("E8", 6);
-        e9 = new Estacao("E9", 10);
-        e10 = new Estacao("E10", 8);
-        e11 = new Estacao("E11", 13);
-        e12 = new Estacao("E12", 12);
-        e13 = new Estacao("E13", 6);
-        e14 = new Estacao("E14", 0);
+        e1red = new Estacao("Estação 1 - linha Vermelha", 17);
+        e2redGreen = new Estacao("Estação 2 - Permite troca entre as linhas Vermelha e Verde", 13);
+        e3redBlue = new Estacao("Estação 3 - Permite troca entre as linhas Vermelha e Azul", 10);
+        e4redYellow = new Estacao("Estação 4 - Permite troca entre as linhas Vermelha e Amarela", 6);
+        e5yellow = new Estacao("Estação 5 - Linha Amarela", 7);
+        e6blue = new Estacao("Estação 6 - Linha Azul", 21);
+        e7blueGreen = new Estacao("Estação 7 - Permite troca entre as linhas Azul e Verde", 17);
+        e8blueYellow = new Estacao("Estação 8 - Permite troca entre as linhas azul e amarela", 6);
+        e9yellowGreen = new Estacao("Estação 9 - Permite troca entre as linhas Amarela e Verde", 10);
+        e10greenBlue = new Estacao("Estação 10 - Permite troca entre as linhas Verde e Azul", 8);
+        e11yellow = new Estacao("Estação 11 - Linha Amarela", 13);
+        e12blue = new Estacao("Estação 12 - Linha Azul", 12);
+        e13green = new Estacao("Estação 13 - Linha Verde", 6);
+        e14red = new Estacao("Estação 14 - Linha Vermelha", 0);
 
 
         // Definir as arestas de estacoes adjacentes a e1
-        e1.addEstacaoAdjacente(new Adjacente(e2, 4));
+        e1red.addEstacaoAdjacente(new Adjacente(e2redGreen, 4));
 
         // Definir as arestas de estacoes adjacentes a e2
-        e2.addEstacaoAdjacente(new Adjacente(e1, 4));
-        e2.addEstacaoAdjacente(new Adjacente(e3, 5));
-        e2.addEstacaoAdjacente(new Adjacente(e7, 14));
-        e2.addEstacaoAdjacente(new Adjacente(e9, 4));
+        e2redGreen.addEstacaoAdjacente(new Adjacente(e1red, 4));
+        e2redGreen.addEstacaoAdjacente(new Adjacente(e3redBlue, 5));
+        e2redGreen.addEstacaoAdjacente(new Adjacente(e7blueGreen, 14));
+        e2redGreen.addEstacaoAdjacente(new Adjacente(e9yellowGreen, 4));
 
         // Definir as arestas de estacoes adjacentes a e3
-        e3.addEstacaoAdjacente(new Adjacente(e2, 5));
-        e3.addEstacaoAdjacente(new Adjacente(e4, 6));
-        e3.addEstacaoAdjacente(new Adjacente(e7, 8));
-        e3.addEstacaoAdjacente(new Adjacente(e8, 4));
+        e3redBlue.addEstacaoAdjacente(new Adjacente(e2redGreen, 5));
+        e3redBlue.addEstacaoAdjacente(new Adjacente(e4redYellow, 6));
+        e3redBlue.addEstacaoAdjacente(new Adjacente(e7blueGreen, 8));
+        e3redBlue.addEstacaoAdjacente(new Adjacente(e8blueYellow, 4));
 
         // Definir as arestas de estacoes adjacentes a e4
-        e4.addEstacaoAdjacente(new Adjacente(e3, 6));
-        e4.addEstacaoAdjacente(new Adjacente(e5, 3));
-        e4.addEstacaoAdjacente(new Adjacente(e8, 4));
-        e4.addEstacaoAdjacente(new Adjacente(e14, 6));
+        e4redYellow.addEstacaoAdjacente(new Adjacente(e3redBlue, 6));
+        e4redYellow.addEstacaoAdjacente(new Adjacente(e5yellow, 3));
+        e4redYellow.addEstacaoAdjacente(new Adjacente(e8blueYellow, 4));
+        e4redYellow.addEstacaoAdjacente(new Adjacente(e14red, 6));
 
         // Definir as arestas de estacoes adjacentes a e5
-        e5.addEstacaoAdjacente(new Adjacente(e4, 3));
+        e5yellow.addEstacaoAdjacente(new Adjacente(e4redYellow, 3));
 
         // Definir as arestas de estacoes adjacentes a e6
-        e6.addEstacaoAdjacente(new Adjacente(e7, 3));
+        e6blue.addEstacaoAdjacente(new Adjacente(e7blueGreen, 3));
 
         // Definir as arestas de estacoes adjacentes a e7
-        e7.addEstacaoAdjacente(new Adjacente(e2, 14));
-        e7.addEstacaoAdjacente(new Adjacente(e3, 8));
-        e7.addEstacaoAdjacente(new Adjacente(e6, 3));
+        e7blueGreen.addEstacaoAdjacente(new Adjacente(e2redGreen, 14));
+        e7blueGreen.addEstacaoAdjacente(new Adjacente(e3redBlue, 8));
+        e7blueGreen.addEstacaoAdjacente(new Adjacente(e6blue, 3));
 
         // Definir as arestas de estacoes adjacentes a e8
-        e8.addEstacaoAdjacente(new Adjacente(e3, 4));
-        e8.addEstacaoAdjacente(new Adjacente(e4, 6));
-        e8.addEstacaoAdjacente(new Adjacente(e9, 5));
-        e8.addEstacaoAdjacente(new Adjacente(e10, 6));
+        e8blueYellow.addEstacaoAdjacente(new Adjacente(e3redBlue, 4));
+        e8blueYellow.addEstacaoAdjacente(new Adjacente(e4redYellow, 6));
+        e8blueYellow.addEstacaoAdjacente(new Adjacente(e9yellowGreen, 5));
+        e8blueYellow.addEstacaoAdjacente(new Adjacente(e10greenBlue, 6));
 
         // Definir as arestas de estacoes adjacentes a e9
-        e9.addEstacaoAdjacente(new Adjacente(e2, 4));
-        e9.addEstacaoAdjacente(new Adjacente(e8, 5));
-        e9.addEstacaoAdjacente(new Adjacente(e10, 3));
-        e9.addEstacaoAdjacente(new Adjacente(e11, 3));
+        e9yellowGreen.addEstacaoAdjacente(new Adjacente(e2redGreen, 4));
+        e9yellowGreen.addEstacaoAdjacente(new Adjacente(e8blueYellow, 5));
+        e9yellowGreen.addEstacaoAdjacente(new Adjacente(e10greenBlue, 3));
+        e9yellowGreen.addEstacaoAdjacente(new Adjacente(e11yellow, 3));
 
         // Definir as arestas de estacoes adjacentes a e10
-        e10.addEstacaoAdjacente(new Adjacente(e8, 6));
-        e10.addEstacaoAdjacente(new Adjacente(e9, 3));
-        e10.addEstacaoAdjacente(new Adjacente(e12, 6));
-        e10.addEstacaoAdjacente(new Adjacente(e13, 9));
+        e10greenBlue.addEstacaoAdjacente(new Adjacente(e8blueYellow, 6));
+        e10greenBlue.addEstacaoAdjacente(new Adjacente(e9yellowGreen, 3));
+        e10greenBlue.addEstacaoAdjacente(new Adjacente(e12blue, 6));
+        e10greenBlue.addEstacaoAdjacente(new Adjacente(e13green, 9));
 
         // Definir as arestas de estacoes adjacentes a e11
-        e11.addEstacaoAdjacente(new Adjacente(e9, 3));
+        e11yellow.addEstacaoAdjacente(new Adjacente(e9yellowGreen, 3));
 
         // Definir as arestas de estacoes adjacentes a e12
-        e12.addEstacaoAdjacente(new Adjacente(e10, 6));
+        e12blue.addEstacaoAdjacente(new Adjacente(e10greenBlue, 6));
 
         // Definir as arestas de estacoes adjacentes a e13
-        e13.addEstacaoAdjacente(new Adjacente(e10, 9));
+        e13green.addEstacaoAdjacente(new Adjacente(e10greenBlue, 9));
 
         // Definir as arestas de estacoes adjacentes a e14
-        e14.addEstacaoAdjacente(new Adjacente(e4, 6));
+        e14red.addEstacaoAdjacente(new Adjacente(e4redYellow, 6));
     }
 
-    public Estacao getE1() {
-        return e1;
+    public Estacao getE1red() {
+        return e1red;
     }
 
-    public void setE1(Estacao e1) {
-        this.e1 = e1;
+    public void setE1red(Estacao e1red) {
+        this.e1red = e1red;
     }
 
-    public Estacao getE2() {
-        return e2;
+    public Estacao getE2redGreen() {
+        return e2redGreen;
     }
 
-    public void setE2(Estacao e2) {
-        this.e2 = e2;
+    public void setE2redGreen(Estacao e2redGreen) {
+        this.e2redGreen = e2redGreen;
     }
 
-    public Estacao getE3() {
-        return e3;
+    public Estacao getE3redBlue() {
+        return e3redBlue;
     }
 
-    public void setE3(Estacao e3) {
-        this.e3 = e3;
+    public void setE3redBlue(Estacao e3redBlue) {
+        this.e3redBlue = e3redBlue;
     }
 
-    public Estacao getE4() {
-        return e4;
+    public Estacao getE4redYellow() {
+        return e4redYellow;
     }
 
-    public void setE4(Estacao e4) {
-        this.e4 = e4;
+    public void setE4redYellow(Estacao e4redYellow) {
+        this.e4redYellow = e4redYellow;
     }
 
-    public Estacao getE5() {
-        return e5;
+    public Estacao getE5yellow() {
+        return e5yellow;
     }
 
-    public void setE5(Estacao e5) {
-        this.e5 = e5;
+    public void setE5yellow(Estacao e5yellow) {
+        this.e5yellow = e5yellow;
     }
 
-    public Estacao getE6() {
-        return e6;
+    public Estacao getE6blue() {
+        return e6blue;
     }
 
-    public void setE6(Estacao e6) {
-        this.e6 = e6;
+    public void setE6blue(Estacao e6blue) {
+        this.e6blue = e6blue;
     }
 
-    public Estacao getE7() {
-        return e7;
+    public Estacao getE7blueGreen() {
+        return e7blueGreen;
     }
 
-    public void setE7(Estacao e7) {
-        this.e7 = e7;
+    public void setE7blueGreen(Estacao e7blueGreen) {
+        this.e7blueGreen = e7blueGreen;
     }
 
-    public Estacao getE8() {
-        return e8;
+    public Estacao getE8blueYellow() {
+        return e8blueYellow;
     }
 
-    public void setE8(Estacao e8) {
-        this.e8 = e8;
+    public void setE8blueYellow(Estacao e8blueYellow) {
+        this.e8blueYellow = e8blueYellow;
     }
 
-    public Estacao getE9() {
-        return e9;
+    public Estacao getE9yellowGreen() {
+        return e9yellowGreen;
     }
 
-    public void setE9(Estacao e9) {
-        this.e9 = e9;
+    public void setE9yellowGreen(Estacao e9yellowGreen) {
+        this.e9yellowGreen = e9yellowGreen;
     }
 
-    public Estacao getE10() {
-        return e10;
+    public Estacao getE10greenBlue() {
+        return e10greenBlue;
     }
 
-    public void setE10(Estacao e10) {
-        this.e10 = e10;
+    public void setE10greenBlue(Estacao e10greenBlue) {
+        this.e10greenBlue = e10greenBlue;
     }
 
-    public Estacao getE11() {
-        return e11;
+    public Estacao getE11yellow() {
+        return e11yellow;
     }
 
-    public void setE11(Estacao e11) {
-        this.e11 = e11;
+    public void setE11yellow(Estacao e11yellow) {
+        this.e11yellow = e11yellow;
     }
 
-    public Estacao getE12() {
-        return e12;
+    public Estacao getE12blue() {
+        return e12blue;
     }
 
-    public void setE12(Estacao e12) {
-        this.e12 = e12;
+    public void setE12blue(Estacao e12blue) {
+        this.e12blue = e12blue;
     }
 
-    public Estacao getE13() {
-        return e13;
+    public Estacao getE13green() {
+        return e13green;
     }
 
-    public void setE13(Estacao e13) {
-        this.e13 = e13;
+    public void setE13green(Estacao e13green) {
+        this.e13green = e13green;
     }
 
-    public Estacao getE14() {
-        return e14;
+    public Estacao getE14red() {
+        return e14red;
     }
 
-    public void setE14(Estacao e14) {
-        this.e14 = e14;
+    public void setE14red(Estacao e14red) {
+        this.e14red = e14red;
     }
 }
 

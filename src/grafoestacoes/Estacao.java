@@ -9,10 +9,10 @@ public class Estacao {
     private int distanciaObjetivo; // Indica distancia até o objetivo
     private List<Adjacente> adjacentes; // Lista de estacoes adjacentes e suas conexoes (distancias)
 
-    // Constructor da classe Estacao
+    // Construtor da classe Estacao
     public Estacao(String nome, int distanciaObjetivo){
         this.nome = nome;
-        visitado = false; // Inicialmente, a estacao nao foi visitada
+        visitado = false; // false, pois inicialmente, a estacao nao foi visitada
         this.distanciaObjetivo = distanciaObjetivo;
         adjacentes = new ArrayList<Adjacente>(); // Inicializa a lista de estacoes adjacentes
     }

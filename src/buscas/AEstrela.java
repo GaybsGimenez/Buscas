@@ -15,7 +15,7 @@ public class AEstrela {
         achou = false;
     }
     public void buscar(Estacao atual) {
-        System.out.println("\n * Atual: " + atual.getNome());
+        System.out.println("\n * Estação atual: " + atual.getNome());
         atual.setVisitado(true);
 
         if (atual == objetivo) {
@@ -42,8 +42,8 @@ public class AEstrela {
 
     public static void main(String args[]){
         Mapa mapa = new Mapa();
-        AEstrela a = new AEstrela(mapa.getE14()); // Estação final: E14
-        a.buscar(mapa.getE1()); // Estação inicial: E1
+        AEstrela a = new AEstrela(mapa.getE14red()); // Estação final: E14
+        a.buscar(mapa.getE1red()); // Estação inicial: E1
     }
 
 
