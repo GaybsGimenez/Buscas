@@ -43,7 +43,7 @@ O problema consiste em calcular a melhor rota em um mapa "reduzido" do metrô de
 
 #### 2. (0,1 pt) Formule o problema escolhido em termos de estado inicial, estado final, ações (e seus custos) e função de avaliação para Busca com A*.
         * Estado inicial: Estação (E1)
-        * Estado final: Estação (E13)
+        * Estado final: Estação (E14)
         * Ações e Custos: 
         * Função de Avaliação para Busca A*: 
 #### 4. (0,2 pt) Desenhe pelo menos os 3 níveis iniciais da árvore de busca (raiz e mais 2 níveis) – pelo menos três rodadas do algoritmo. Indique o estado que o nó representa e seu custo (g+h), e escreva a fronteira a cada rodada (nível da árvore). Vejam o exemplo abaixo tirado dos slides da nossa aula.
