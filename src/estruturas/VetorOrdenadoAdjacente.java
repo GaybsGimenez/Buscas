@@ -2,6 +2,7 @@ package estruturas;
 
 import grafoestacoes.Adjacente;
 import grafoestacoes.Estacao;
+import grafoestacoes.Mapa;
 
 public class VetorOrdenadoAdjacente {
     private Adjacente[] adjacentes;
@@ -42,4 +43,5 @@ public class VetorOrdenadoAdjacente {
             System.out.println(adjacentes[i].getEstacao().getNome() + " - " + adjacentes[i].getDistanciaAEstrela());
         }
     }
+
 }
